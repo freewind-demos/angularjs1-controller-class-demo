@@ -11,7 +11,9 @@
     </style>
 </head>
 <body ng-app="app">
-<div my-directive class="red-border">Hello, world! (should replaced by the directive `myDirective`)</div>
+<div ng-controller="helloController">
+    <div>Hello, {{ name }}!</div>
+</div>
 <script src="./bundle.js"></script>
 </body>
 </html>

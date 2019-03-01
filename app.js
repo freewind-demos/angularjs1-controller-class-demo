@@ -1,13 +1,18 @@
 import angular from 'angular';
 
-const app = angular.module('app', []);
+class Controller {
+  static get $inject() {
+    return ['$scope']
+  }
 
-app.directive('myDirective', function () {
-    return {
-        template: '<div class="bg-yellow">{{ message }}</div>',
-        controller: function ($scope) {
-            $scope.message = "Hello, angularjs"
-        },
-        restrict: 'A'
-    }
-});
+  constructor($scope) {
+    this.$scope = $scope;
+  }
+
+  $onInit() {
+    this.$scope.name = "angularjs"
+  }
+}
+
+const app = angular.module('app', []);
+app.controller('helloController', Controller);

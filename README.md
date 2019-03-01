@@ -1,7 +1,10 @@
-AngularJS1 Directive Template Controller Demo
-=============================================
+AngularJS1 Controller Class Demo
+================================
+
+Use `class` style to write a controller.
+
 
 ```
 npm install
-open index.html
+npm run demo
 ```
