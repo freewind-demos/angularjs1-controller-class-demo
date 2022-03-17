@@ -6,5 +6,5 @@ Use `class` style to write a controller.
 
 ```
 npm install
-npm run demo
+npm start
 ```

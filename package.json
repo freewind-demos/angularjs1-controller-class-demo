@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "demo": "webpack-serve --open"
+    "start": "webpack-serve --open"
   },
   "dependencies": {
     "angular": "1.7.7"
